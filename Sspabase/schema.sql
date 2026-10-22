@@ -1,0 +1,20 @@
+-- GaragePro live database has already been provisioned in Supabase project:
+-- xazhysqmzjkxwrbejasp (GaragePro), region ap-southeast-1.
+-- This file is intentionally not a runnable migration. The production schema was
+-- applied directly to the dedicated GaragePro project and verified afterward.
+-- Do NOT run the former starter schema that used work_orders/plate_number; it
+-- does not match the provisioned database.
+--
+-- Current public tables:
+-- profiles, customers, vehicles, parts, repair_orders, repair_items,
+-- quotes, payments, repair_status_history.
+--
+-- Enums:
+-- app_role = admin, staff, technician, customer
+-- repair_status = received, diagnosing, waiting_approval, waiting_parts,
+--                in_progress, quality_check, completed, delivered, cancelled
+-- payment_method = cash, transfer, card, other
+--
+-- RLS is enabled on every public table. The internal role helper lives in the
+-- private schema and is not exposed to anonymous clients. See README.md for
+-- first-admin setup and the current live project details.
